@@ -19,5 +19,23 @@ class Program
             };
 
             Film myFilm = new Film(tarantino, actorsList, videosList);
+            
+            Console.WriteLine(" Director Info ");
+            myFilm.director.PrintInfo(); 
+
+            Console.WriteLine("\n Actors Info ");
+            foreach (var actor in myFilm.Actors)
+            {
+                actor.PrintInfo(); 
+            }
+
+            Console.WriteLine("\nvideograph");
+            foreach (var video in myFilm.Videos)
+            {
+                video.PrintInfo(); 
+            }
+
+        
     }
+    
 }
